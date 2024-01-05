@@ -1,0 +1,7 @@
+<h1>Subjects</h1>
+
+<ul>
+  <% @completed_subject.each do |subject| %>
+    <li><%= link_to subject.name, new_user_subject_completed_subject_path(current_user, subject) %></li>
+  <% end %>
+</ul>

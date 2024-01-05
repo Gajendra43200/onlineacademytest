@@ -1,0 +1,11 @@
+<%= f_with(model: @subject, url: @subject.persisted? ? subject_path(@subject) : subjects_path, method: @subject.persisted? ? :patch : :post) do |form| %>
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+  
+    <div>
+      <%= form.submit 'Save' %>
+    </div>
+  <% end %>
+  

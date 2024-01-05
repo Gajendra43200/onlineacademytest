@@ -1,0 +1,18 @@
+<h1>New Question</h1>
+<!-- <div class="table-wrapper"> -->
+  <div>
+    <% if @subject %>
+  <h1 > create question for <%= @subject.name %></h1>
+  <%= render 'form' %>
+  <%else %>
+  </div>
+  <div class="table-wrapper">
+  <h1> Select subject For question</h1>
+  <ul>
+  <div class="as">
+    <%= link_to "All questions", subjects_path,class:"btn btn-outline-dark" %>
+  </div>
+
+</div>
+  <%end %>
+

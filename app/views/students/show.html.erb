@@ -1,0 +1,14 @@
+<!-- app/views/students/show.html.erb -->
+<h1>Student Details</h1>
+
+<p><strong>Name:</strong> <%= @student.name %></p>
+<p><strong>Email:</strong> <%= @student.email %></p>
+<p><strong>Email:</strong> <%= @student.password %></p>
+
+<h1>Subjects</h1>
+<%= link_to 'Edit', edit_student_path(@student) %> 
+<%= link_to 'Back', students_path %>
+<%= link_to 'subjects', subjects_path(@student) %>
+<%= link_to 'completed_subject', new_student_subject_completed_subject_path(@student)%>
+
+    

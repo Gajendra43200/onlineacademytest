@@ -1,0 +1,14 @@
+<div class="signin">
+  <div class="content">
+    <%= form_with(model: [@subject, @question],local: true) do |form| %>
+<%= form.hidden_field :subject_id, value: @subject.id %><br>
+<%= form.label :content %><br>
+<%= form.text_field :content,class:"label1" %><br>
+
+<%= form.submit "create question",class:"btn btn-outline-light" %>
+<%= link_to "All subjects", subjects_path,class:"btn btn-outline-light" %>
+<%= link_to "All question", subject_questions_path %>
+
+<%end %>
+</div>
+</div>

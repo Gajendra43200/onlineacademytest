@@ -8,8 +8,8 @@ Rails.application.configure do
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
-  # and those relying on copy on write to perform better.
-  # Rake tasks automatically ignore this option for performance.
+  # and those relying on copy on write to perf better.
++  # Rake tasks automatically ignore this option for perfance.
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
@@ -76,7 +76,7 @@ Rails.application.configure do
   config.active_support.report_deprecations = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.new
+   config.log_formatter = ::Logger::Formatter.new
 
   # Use a different logger for distributed setups.
   # require "syslog/logger"
@@ -84,7 +84,7 @@ Rails.application.configure do
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
-    logger.formatter = config.log_formatter
+    logger.formatter = config.log_fatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 

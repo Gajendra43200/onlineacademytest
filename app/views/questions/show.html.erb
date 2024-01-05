@@ -1,0 +1,25 @@
+<div class="table-wrapper">
+<table class="fl-table">
+  <thead>
+    <tr>
+      <th>question_id     |</th>
+       <th>subject_id      |</th>
+      <th>content       |</th>
+      <th>correct_option       |</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><%= @question.id %></td>
+        <td><%= @question.subject_id%></td>
+        <td><%= @question.content %></td>
+      </tr>
+  </tbody>
+</table>
+<br>
+<div class="form">
+  <%= link_to "new question", new_subject_question_path %>||
+  <%= link_to "All question", subject_questions_path %>
+</div>
+</div>
+</div>

@@ -1,0 +1,17 @@
+<!-- app/views/subjects/new.html.erb -->
+<h1>New Subject</h1>
+
+<%= form_with(model: @subject, url: @subject.persisted? ? subject_path(@subject) : subjects_path, method: @subject.persisted? ? :patch : :post) do |form| %>
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+  
+    <div>
+      <%= form.submit 'Save' %>
+    </div>
+  <% end %>
+  
+
+<%= link_to 'Back', subjects_path %>
+

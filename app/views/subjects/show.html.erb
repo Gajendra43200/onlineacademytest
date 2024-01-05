@@ -1,0 +1,8 @@
+<!-- app/views/subjects/show.html.erb -->
+<h1><%= @subject.name %></h1>
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>
+<td><%= link_to 'create question',  new_subject_question_path(@subject),class:"btn btn-outline-dark"%></td>
+<%= link_to 'new  completed Subject',  new_subject_completed_subject_path(@subject) %>
+
+
